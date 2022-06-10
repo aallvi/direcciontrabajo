@@ -1,0 +1,33 @@
+@use 'variables' as v;
+
+// html, body, p, label{
+
+//    font-family: v.$fuentePrincipal;
+// }
+
+.contenedor {
+   width: 95%;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+a {
+   text-decoration: none;
+}
+
+img {
+
+   display: block;
+}
+
+
+
+html {
+   font-size: 62.5%;
+   box-sizing: border-box;
+}
+
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
