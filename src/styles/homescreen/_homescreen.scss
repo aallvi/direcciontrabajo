@@ -1,0 +1,184 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+
+.titulo{
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: fit-content;
+    font-size: 2rem;
+}
+
+.contenedorInput{
+
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+
+    .busqueda{
+        margin: 0 auto;
+        width: 30rem;
+        height: 2.5rem;
+        font-size: 1.6rem;
+        font-family: v.$fuentePrincipal;
+
+    }
+
+    .buscarButton{
+        width: 8rem;
+        height: 2.5rem;
+        margin-left: 2rem;
+        font-size: 1.8rem;
+
+        font-family: v.$fuentePrincipal;
+    }
+
+}
+
+
+
+
+
+.contenidoTodoTablaDocPorFirmar{
+    margin: 0 auto;
+    width: 37rem;
+    background-color: white;
+    border-radius: 1rem;
+    p{
+        font-size: 1.8rem;
+        background-color: none;
+    }
+
+    @include m.telefono {
+        margin: 0 auto;
+        width: 50rem;
+    }
+
+            @include m.tablet {
+                margin: 0 auto;
+            width: 80rem;
+
+        
+            }
+
+}
+
+.headerTablaDocPorFirmar{
+    display: flex;
+    flex-direction: row;
+    height: 6.5rem;
+    align-items: center;
+    border-width: 4rem;
+    margin-top: 0.1rem;
+    // border: 0.1px solid rgb(223, 219, 219);
+    /* border-top-left-radius: 1rem; */
+    /* border-top-right-radius: 1rem; */
+    p{
+      width: 33.3%;
+      text-align: center;
+
+      &:nth-child(3){
+        padding-left: 1.5rem;
+      }
+  }
+  }
+
+
+
+.contenidoTablaDocPorFirmar {
+    // box-shadow: -2px 0px 19px -4px rgba(90, 90, 90, 0.27);
+    border: 0.1px solid rgb(223, 219, 219);
+    
+    
+    height: 48rem;
+    margin-bottom: 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 1rem;
+
+     
+
+
+      .divflat{
+        display: flex;
+        flex-direction: row;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        height: 7rem;
+       border-bottom: 0.1px solid rgb(223, 219, 219);
+       width: 80rem;
+       
+
+     
+      
+
+        p {
+            text-align: center;
+            // width: 33.3%;
+           font-size: 1.6rem;
+
+          
+
+        }
+
+        .firmar{
+            color: v.$primario;
+            cursor: pointer;
+        }
+
+
+           
+
+          @include m.tablet {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            height: 6rem;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 38% 23% 30%;
+            align-items: center;
+            
+          a{
+            margin-left: 17rem;
+            font-size: 2rem;
+            margin-top: -6px;
+            padding: 0;
+        
+          }
+    
+       p{
+        font-size: 1.8rem;
+
+        &:nth-child(1){
+            padding-left: 3rem;
+            // background-color: green;
+            width: fit-content;
+        }
+
+        &:last-child{
+            margin-left: 12.7rem;
+        }
+         
+        &:empty{
+            display: none;
+        }
+
+       }
+           
+
+
+           border-bottom: 0.1px solid rgb(223, 219, 219);
+  
+               
+  
+          }
+         
+
+      
+            
+      }
+}
